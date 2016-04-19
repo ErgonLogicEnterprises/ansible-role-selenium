@@ -1,6 +1,6 @@
 ## selenium [![Build Status](https://travis-ci.org/arknoll/ansible-role-selenium.svg?branch=master)](https://travis-ci.org/arknoll/ansible-role-selenium)
 
-Set up selenium and Firefox for running selenium tests for Drulenium and Aegir Hosting Drulenium
+Set up selenium and Firefox for running selenium tests for Drulenium and possibly Aegir Hosting Drulenium
 
 #### Requirements
 
