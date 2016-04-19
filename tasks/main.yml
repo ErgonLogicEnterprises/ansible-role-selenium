@@ -22,10 +22,20 @@
     - firefox
   when: ansible_os_family == 'RedHat'
 
-- name: install
+- name: install selenium
   template: src=selenium-init-{{ ansible_os_family }}.j2 dest=/etc/init.d/selenium owner=root group=root mode=0755
   tags: [configuration, selenium, selenium-install]
 
-- name: run
-  service: name=selenium state=started enabled=yes
-  tags: [configuration, selenium, selenium-run]
+#- name: run
+#  service: name=selenium state=started enabled=yes
+#  tags: [configuration, selenium, selenium-run]
+
+#- name: Xvfb service on non standard port to avoid clash
+#  shell: sudo Xvfb :10 -ac
+
+#- name: export DISPLAY
+#  shell: export DISPLAY=:10
+
+# - name: run selenium
+#  shell: nohup xvfb-run java -jar {{ selenium_install_dir }}/selenium/selenium-server-standalone-{{ selenium_version }}.jar -log selenium.log &
+#  tags: [configuration, selenium, selenium-run]
