@@ -2,6 +2,10 @@
 
 Set up selenium and Firefox for running selenium tests for Drulenium and possibly Aegir Hosting Drulenium
 
+#### Troubleshooting
+
+Look for processes named selenium and xvfb and kill them if needed
+
 #### Requirements
 
 * `java`
