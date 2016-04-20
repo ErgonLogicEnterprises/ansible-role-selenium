@@ -14,7 +14,7 @@ SELENIUM_PID_FILE="$SELENIUM_DIR/selenium.pid"
 SELENIUM_JAR_FILE="$SELENIUM_DIR/selenium-server-standalone-{{ selenium_version }}.jar"
 SELENIUM_LOG_FILE="$SELENIUM_DIR/selenium.log"
 #SELENIUM_DAEMON_OPTS=" -client -jar $SELENIUM_JAR_FILE -log $SELENIUM_LOG_FILE"
-SELENIUM_DAEMON_OPTS=" -client -jar $SELENIUM_JAR_FILE -host 10.1.10.98 -log $SELENIUM_LOG_FILE"
+SELENIUM_DAEMON_OPTS=" -client -jar $SELENIUM_JAR_FILE -host 127.0.0.1 -log $SELENIUM_LOG_FILE"
 
 set -e
 
