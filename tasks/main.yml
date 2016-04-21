@@ -26,9 +26,11 @@
   template: src=selenium-init-{{ ansible_os_family }}.j2 dest=/etc/init.d/selenium owner=root group=root mode=0755
   tags: [configuration, selenium, selenium-install]
 
-#- name: run
-#  service: name=selenium state=started enabled=yes
-#  tags: [configuration, selenium, selenium-run]
+- name: run
+  service: name=selenium state=started enabled=yes
+  tags: [configuration, selenium, selenium-run]
+
+# /opt/selenium$ sudo xvfb-run java -jar selenium-server-standalone-2.47.1.jar -log selenium.log &
 
 #- name: Xvfb service on non standard port to avoid clash
 #  shell: sudo Xvfb :10 -ac
